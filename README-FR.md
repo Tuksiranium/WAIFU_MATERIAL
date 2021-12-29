@@ -7,6 +7,9 @@
 D'abord, clone le repo: `git clone https://github.com/Tuksiranium/WAIFU_MATERIAL.git`
 Ou télécharge et dézip-le avec le bouton vert "Code".
 
+Tu aurras biensur besoin du **token**.
+Demande-le moi pour que je te le donnes.
+
 Maintenant, il y a deux méthodes :
 
 ##### Méthode Terminal :
