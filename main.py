@@ -21,8 +21,11 @@ async def on_member_join(member):
 
 #Padoru song
 @bot.command()
-async def padoru(ctx):
-    padoru = ["HASIRE SORI YO", "KASE NO YOU NI", "TSUKIMIHARA WO", "**PADORU PADORU**"]
+async def padoru(ctx, j=None):
+    if j:
+        padoru = ["走れそりよ", "風の用に", "付き三原を", "**パドルパドル**"]
+    else:
+        padoru = ["HASIRE SORI YO", "KASE NO YOU NI", "TSUKIMIHARA WO", "**PADORU PADORU**"]
     print(padoru[0])
     for pdru in range(len(padoru)):
         await ctx.send(padoru[pdru])
@@ -89,8 +92,8 @@ async def mlb(ctx):
 async def h(ctx):
     await ctx.send(
         "Listes des ordres que tu peux me donner (car je suis très exigeante) :\n"
-        "- c : clear chat\n"
-        "- padoru : chante une très belle chanson\n"
+        "- c {nbr} : clear 'nbr' msg dans le chat\n"
+        "- padoru : chante une très belle chanson (+option 'j' jap)\n"
         "- srand : je te donne un numéro et si ça marche tu devient une vache.\n"
         "- nico : ba nico (+mention spéciale 'c' au camion)"
     )
@@ -103,7 +106,7 @@ async def on_command_error(ctx, error):
 
 
 
-token = "replace here by the token I give to you"
+token = "replace here by token"
 
 print("Lancement du bot...")
 bot.run(token)
