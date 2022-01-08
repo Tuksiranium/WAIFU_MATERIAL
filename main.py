@@ -106,7 +106,7 @@ async def on_command_error(ctx, error):
 
 
 
-token = "replace here by token"
+token = "ask me for this"
 
 print("Lancement du bot...")
 bot.run(token)
